@@ -1,13 +1,110 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-size: 1.5rem;
+	background-color: #14ddbb;
+	font-family: "Mate SC", serif;
+}
+
+input,
+select {
+	width: 100%;
+	height: 2.5rem;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	border-radius: 2rem;
+	background-color: #ffffff;
+	border: 2px solid #555;
+}
+
+input:focus,
+select:focus {
+	outline-style: none;
+}
+
+label {
+	font-weight: 700;
+}
+
+button {
+	width: fit-content;
+	height: fit-content;
+	font-size: 1.2rem;
+	font-weight: 800;
+	padding: 10px 20px;
+	background-color: #164142;
+	border-radius: 2rem;
+	color: white;
+	border: 2px solid black;
+}
+
+.container {
+	margin: auto;
+	margin-top: 1rem;
+	width: 55%;
+	border-left: 2px solid #555;
+	border-right: 2px solid #555;
+	padding: 2rem;
+}
+@media (min-width: 1000px) {
+	.form-flex {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.form-group {
+	flex-basis: 49%;
+}
+
+.btn-center-div,
+.alert-div {
+	display: flex;
+	justify-content: center;
+}
+
+.alert-div p {
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border: 5px solid black;
+	background-color: #052331;
+	color: #f5dd0b;
+	font-style: italic;
+	font-weight: 800;
+}
+
+.user-div {
+	background-color: #eee;
+	padding: 0.75rem;
+	margin-bottom: 1rem;
+	margin-top: 0.25rem;
+	color: black;
+	font-family: cursive;
+	font-size: 1rem;
+	border-radius: 1rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.text-margin {
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+
+hr {
+	border-bottom: 2px solid #555;
 }
